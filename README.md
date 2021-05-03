@@ -13,6 +13,8 @@ The fitness values of the evaluated individuals will be output to the "fitnessVa
 To change the simulation settings, open the "TesterTesnegrities2" Houdini file, navigate to the node network display in the bottom right and locate the red and black control node. Clicking on this node should cause the main adjustable parameters of the simulation to appear in the Parameters pane. Currently, the options for models are 0 and 1, corresponding to the spherical icosahderon and the modified tensegrity pelvis respectively. The parameters for environment include: 0, a height map constructed from satelite data of the topology of Western Massachussetts; 1, a flat ground plane(be sure to re-check ground position on the vellum solver when using this setting); 2, a basic procedural maze generator.
 When changing the evaluation frame, make sure to change the evaluation frame variable in the theseus9000 script as well. 
 
+Houdini defaults to a framerate of 24 fps and the standard meter for the basic distance unit. 
+
 A custom seeded policy can be implemented in the theseus9000 script, but there is no currently implemented function to turn an expression into a genome so this process must be done first by hand.
 
 Implementing new variable is as easy as making sure they are available to the constraint geometry in the Houdini simulation and adding their name to the list of variables at the beginning of the Genomics script. If the variable implementation is reference in the vellum constraints property node, make sure to update the corresponding code in the HoudiniExpressionizer script so that it isnt replaced by the previous settings when the simulation is generated.
