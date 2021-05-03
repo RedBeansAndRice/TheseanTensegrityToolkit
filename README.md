@@ -18,4 +18,15 @@ A custom seeded policy can be implemented in the theseus9000 script, but there i
 Implementing new variable is as easy as making sure they are available to the constraint geometry in the Houdini simulation and adding their name to the list of variables at the beginning of the Genomics script. If the variable implementation is reference in the vellum constraints property node, make sure to update the corresponding code in the HoudiniExpressionizer script so that it isnt replaced by the previous settings when the simulation is generated.
 
 Evolutionary settings, such as number of generations, individuals per generation, genome initialization length range and mutation, addition and deletion rates, can be accessed at the top of the Theseus9000 script. If the program crashes or the program loses track of an evolutionary lineage, remove all incorrectly generated data, set the crash variable in the Theseus9000 script to 1 and run again. Make sure there is no new line at the end of the Tesnegrigene file to ensure correct data processing across available toolkit functionalities.
+
+Due to cache constraints inherent to my hardware and the nature of the project, the active version of the maze generation algorithm is a much "cheaper" bastardization of the original, but uses incomplete maze generation logic so care must be taken to provide a seed which produces an effectively equivalent model despite this short-coming. Finding a better compromise between these approaches is a key goal of future work.
+
 *Make sure you've downloaded Houdini and that the Hrender path in the Theseus9000 script matches yours. Python module configurations may be necessary as well.
+
+Special thanks to Junichiro Horikawa for providing the following tutorials which were essential to the creation of this project as well as Kaća Bradonjić and Lee Spector for providing academic support.
+
+Tensegrity tutorial:
+www.youtube.com/watch?v=BbB82GQjqyU
+
+Maze-Generation tutorial:
+www.youtube.com/watch?v=4Za_ROLNrLo
