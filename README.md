@@ -6,6 +6,10 @@ The Thesean Tensegrity Toolkit is a basic toolkit for procedurally generating te
 
 It currently consists of four python scripts, two houdini files(one as a permanent backup), three csv's for logging evolutionary data and three folders: one for saving results to, which contains another for saving graphs(which can be automated), and the last for replacing the simulated file to get around a known bug in Houdini's cache maintenance protocol.
 
+# Motivations
+
+A key goal of the Thesean Tensegrity Toolkit is to highlight some of the potential benefits of simulated robotic tensegrity actuation research using leading VFX industry procedural simulation pipeline production software. The ability to easily reconfigure any of the many complex node structures such as solvers for wind, fluids or combustion is specifically designed for the purpose of leveraging of a wealth of carefully configured and constantly evolving procedural modeling and simulation tools built with an eye towards generating useful performance profiles applicable to a wide variety of use cases without getting in the way of stringent customization needs. This makes it easy to generate prototypes and focus on the key scope of a given implementation goal, leaving the tuning of components free to fit the users discretion.
+
 # Getting Started
 
 To start an evolutionary run, navigate into the toolkit folder with command prompt(et al.) and enter "python theseus9000.py".*
